@@ -1,0 +1,36 @@
+.container{
+  padding: 3rem;
+  margin: 8% 15%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.container form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+.container form button {
+  grid-column: 1 / -1;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  box-shadow: 0 0  8px rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: antiquewhite;
+  font-weight: 900;
+  background-color: cadetblue;
+}
+.user-information-box{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;  
+}
+.user-information{
+  display: flex;
+  gap: 1.5rem;
+}

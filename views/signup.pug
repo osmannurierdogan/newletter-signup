@@ -1,0 +1,12 @@
+extends layout 
+block content 
+  div(class="container")
+    h1 Sign Up to my newsletter!
+    form(action="/", method="post")
+      label(for="firstName") First Name
+      input(type="text" id="firstName" name="firstName")
+      label(for="lastName") Last Name
+      input(type="text" id="lastName" name="lastName")
+      label(for="email") E-mail Address 
+      input(type="email" id="email" name="email")
+      button(type="submit") Signup

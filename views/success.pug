@@ -1,0 +1,8 @@
+extends layout 
+block content 
+  p You successfully subscribed my newsletter! 
+  p Here is your informations 
+  div(class="user-information-box")
+    span(class="user-information") First name #[strong #{firstName}]
+    span(class="user-information") Last name #[strong #{lastName}]
+    span(class="user-information") E-mail address #[strong #{email}] 

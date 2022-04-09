@@ -1,0 +1,6 @@
+extends layout 
+block content 
+  h1 Failure 
+  p You could not sign up my newsletter!
+  form(action="/failure", method="post") 
+    button(type="submit" name="button" class="button") Try Again
