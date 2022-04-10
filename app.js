@@ -1,8 +1,10 @@
+
+
 const express = require('express');
 const axios = require('axios');
 const bodyParser = require('body-parser');
 const app = express();
-require('./server.js');
+let PORT = process.env.PORT || 3000;
 
 const listId = '5245f64ba9';
 const serverPrefix = 'us14';
@@ -108,8 +110,9 @@ app.post('/', (req, res) => {
 	});
 });
 
-
-
+app.listen(PORT, () => {
+	console.log(`Server is listening at ${PORT}`);
+});
 // Mailchimp API Key
 // 197d5bebd4b80457ae833052723a378e-us14
 
